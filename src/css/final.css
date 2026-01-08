@@ -111,3 +111,17 @@
     height: 300px; /* ще компактніше на мобілці */
   }
 }
+
+/* щоб кнопка була клікабельна і не перекривалась декором */
+.final-btn {
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+
+/* якщо є “скотч” через ::before — він не має ловити кліки */
+.tape-top::before,
+.tape-corner::before,
+.tape-corner::after {
+  pointer-events: none;
+}

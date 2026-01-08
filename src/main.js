@@ -1,37 +1,17 @@
-function initFinalSecretToggle(root = document) {
-  const openBtn = root.querySelector('[data-final-open]');
-  const secret = root.querySelector('[data-final-secret]');
+document.addEventListener('click', e => {
+  const btn = e.target.closest('[data-final-open]');
+  if (!btn) return;
 
-  // якщо секції/кнопки немає — просто вихід (без помилок)
-  if (!openBtn || !secret) return;
+  const secret = document.querySelector('[data-final-secret]');
+  if (!secret) return;
 
-  // на випадок повторної ініціалізації — не вішаємо ще раз
-  if (openBtn.dataset.bound === 'true') return;
-  openBtn.dataset.bound = 'true';
+  const isHidden = secret.hasAttribute('hidden');
 
-  openBtn.addEventListener('click', () => {
-    const isHidden = secret.hasAttribute('hidden');
-
-    if (isHidden) {
-      secret.removeAttribute('hidden');
-      openBtn.textContent = 'Сховати 💌';
-    } else {
-      secret.setAttribute('hidden', '');
-      openBtn.textContent = 'Натисни 💌';
-    }
-  });
-}
-
-// 1) пробуємо одразу
-initFinalSecretToggle();
-
-// 2) надійно після повного парсингу DOM
-document.addEventListener('DOMContentLoaded', () => {
-  initFinalSecretToggle();
+  if (isHidden) {
+    secret.removeAttribute('hidden');
+    btn.textContent = 'Сховати 💌';
+  } else {
+    secret.setAttribute('hidden', '');
+    btn.textContent = 'Натисни 💌';
+  }
 });
-
-// 3) якщо partial-и підставляються асинхронно (load/include), ловимо зміни
-const observer = new MutationObserver(() => {
-  initFinalSecretToggle();
-});
-observer.observe(document.documentElement, { childList: true, subtree: true });
