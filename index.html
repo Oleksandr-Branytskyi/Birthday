@@ -4,125 +4,453 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Birthday/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Birthday</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/Birthday/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Birthday/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/Birthday/assets/index-DvWdgf_L.css">
   </head>
+
   <body>
-    <header class="header">
+    <div class="page">
+      <div class="page-frame">
+        <header class="header">
   <div class="container">
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/Birthday/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
+      <a class="nav-logo" href="#board">
+        <span class="nav-title">З Днем народження кохана❤️</span>
+        <span class="nav-subtitle">це для тебе</span>
       </a>
+
       <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#board">Дошка</a></li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <a class="nav-link" href="#moments">Моменти</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#details">Деталі</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reasons">Причини</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <a class="nav-link" href="#playlist">Плейлист</a>
         </li>
+        <li class="nav-item"><a class="nav-link" href="#plans">Плани</a></li>
+        <li class="nav-item"><a class="nav-link" href="#final">Фінал</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+        <main>
+          <section class="board" id="board">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/Birthday/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+    <h2 class="board-title">Наша дошка спогадів</h2>
+
+    <div class="board-grid">
+      <figure class="polaroid rotate-left">
+        <img src="/Birthday/assets/moment-DnX8BC6G.jpg" alt="Memory 1" />
+        <figcaption>Один з улюблених моментів</figcaption>
+      </figure>
+
+      <figure class="polaroid rotate-right">
+        <img src="/Birthday/assets/smile-wFye-tiz.jpg" alt="Memory 2" />
+        <figcaption>Тут ми сміялись</figcaption>
+      </figure>
+
+      <figure class="polaroid rotate-left">
+        <img src="/Birthday/assets/remember-QtcsxOdH.jpg" alt="Memory 3" />
+        <figcaption>Цей день я памʼятаю</figcaption>
+      </figure>
+
+      <figure class="polaroid rotate-right">
+        <img src="/Birthday/assets/tepla-EEC0iMJc.jpg" alt="Memory 4" />
+        <figcaption>Ще одна тепла мить</figcaption>
+      </figure>
+
+      <figure class="polaroid rotate-right">
+        <img src="/Birthday/assets/zalushutusya-D3UxdnRL.jpg" alt="Memory 4" />
+        <figcaption>Мить, у якій хочеться залишитися</figcaption>
+      </figure>
+
+      <figure class="polaroid rotate-right">
+        <img src="/Birthday/assets/sample-Ch751TNQ.jpg" alt="Memory 4" />
+        <figcaption>Cвітло навколо і тепло між нами</figcaption>
+      </figure>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
   </div>
 </section>
 
-      <article class="badges">
+          <section class="moments" id="moments">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <h2 class="moments-title">Моменти</h2>
+    <p class="moments-subtitle">
+      Кілька кадрів, які хочеться перегортати знову і знову
+    </p>
+
+    <div class="moments-grid">
+      <article class="moment-card">
+        <figure class="moment-polaroid rotate-left">
+          <img src="/Birthday/assets/vechir-Dvd33ZX6.jpg" alt="Moment 1" />
+          <figcaption>July 21nd</figcaption>
+        </figure>
+
+        <div class="moment-note tape-top">
+          <p class="moment-text">
+            “Ми ніби нічого особливого не планували — але вийшов один з
+            найкращих вечорів.”
+          </p>
+          <span class="moment-sign">— я</span>
+        </div>
+      </article>
+
+      <article class="moment-card reverse">
+        <figure class="moment-polaroid rotate-right">
+          <img src="/Birthday/assets/road-BSK2nbg5.jpg" alt="Moment 2" />
+          <figcaption>Favorite trip</figcaption>
+        </figure>
+
+        <div class="moment-note tape-top">
+          <p class="moment-text">
+            “Ти вмієш робити так, що навіть дорога — це вже пригода.”
+          </p>
+          <span class="moment-sign">— always</span>
+        </div>
+      </article>
+
+      <article class="moment-card">
+        <figure class="moment-polaroid rotate-right">
+          <img src="/Birthday/assets/poruch-DuD69ylY.jpg" alt="Moment 3" />
+          <figcaption>At home</figcaption>
+        </figure>
+
+        <div class="moment-note tape-top">
+          <p class="moment-text">
+            “Найцінніше — коли просто поруч. Без шуму. Без поспіху.”
+          </p>
+          <span class="moment-sign">— ❤️</span>
+        </div>
+      </article>
+
+      <article class="moment-card reverse">
+        <figure class="moment-polaroid rotate-left">
+          <img src="/Birthday/assets/your-smile-CcQbUShO.jpg" alt="Moment 4" />
+          <figcaption>Laugh</figcaption>
+        </figure>
+
+        <div class="moment-note tape-top">
+          <p class="moment-text">“Твій сміх — це моє улюблене ‘все добре’.”</p>
+          <span class="moment-sign">— forever</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+          <section class="details" id="details">
+  <div class="container">
+    <h2 class="details-title">Деталі, які я люблю</h2>
+    <p class="details-subtitle">Дрібниці, з яких складається “ти”</p>
+
+    <ul class="details-list">
+      <li class="detail-card rotate-left">
+        <span class="detail-pin"></span>
+        <h3 class="detail-title">Твій сміх</h3>
+        <p class="detail-text">
+          Він завжди зʼявляється в найпотрібніший момент і одразу робить день
+          легшим.
+        </p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+
+      <li class="detail-card rotate-right">
+        <span class="detail-pin"></span>
+        <h3 class="detail-title">Ти слухаєш</h3>
+        <p class="detail-text">
+          Не наполовину. Не між іншим. А так, що хочеться говорити.
+        </p>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+
+      <li class="detail-card rotate-left">
+        <span class="detail-pin"></span>
+        <h3 class="detail-title">Твоя турбота</h3>
+        <p class="detail-text">
+          У простих речах, які ти навіть не помічаєш, але вони дуже
+          відчуваються.
+        </p>
+      </li>
+
+      <li class="detail-card rotate-right">
+        <span class="detail-pin"></span>
+        <h3 class="detail-title">Твій погляд</h3>
+        <p class="detail-text">В ньому завжди є щось тепле і спокійне.</p>
+      </li>
+
+      <li class="detail-card rotate-left">
+        <span class="detail-pin"></span>
+        <h3 class="detail-title">Ти радієш</h3>
+        <p class="detail-text">Щиро. Без зайвих слів. І цим заражаєш.</p>
+      </li>
+
+      <li class="detail-card rotate-left">
+        <span class="detail-pin"></span>
+        <h3 class="detail-title">Ти справжня</h3>
+        <p class="detail-text">Без ролей. Без масок. Це дуже відчувається.</p>
+      </li>
+
+      <li class="detail-card rotate-left">
+        <span class="detail-pin"></span>
+        <h3 class="detail-title">З тобою легко</h3>
+        <p class="detail-text">Бути собою. Без пояснень.</p>
+      </li>
+
+      <li class="detail-card rotate-left">
+        <span class="detail-pin"></span>
+        <h3 class="detail-title">Ти поруч</h3>
+        <p class="detail-text">
+          Навіть мовчки з тобою добре. І цього достатньо.
+        </p>
       </li>
     </ul>
   </div>
-</article>
+</section>
 
-    </main>
-
-    <footer class="footer">
+          <section class="reasons" id="reasons">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <h2 class="reasons-title">Причини</h2>
+    <p class="reasons-subtitle">Чому ти — моя улюблена людина</p>
+
+    <div class="reasons-wrap">
+      <ol class="reasons-list">
+        <li class="reason-item rotate-left">
+          <span class="reason-num">01</span>
+          <p class="reason-text">Ти робиш навіть звичайні дні теплішими.</p>
+        </li>
+
+        <li class="reason-item rotate-right">
+          <span class="reason-num">02</span>
+          <p class="reason-text">З тобою спокійно. І цікаво.</p>
+        </li>
+
+        <li class="reason-item rotate-left">
+          <span class="reason-num">03</span>
+          <p class="reason-text">Ти вмієш підтримати так, як треба.</p>
+        </li>
+
+        <li class="reason-item rotate-right">
+          <span class="reason-num">04</span>
+          <p class="reason-text">Ти щира. І це дуже відчувається.</p>
+        </li>
+
+        <li class="reason-item rotate-left">
+          <span class="reason-num">05</span>
+          <p class="reason-text">Мені подобається, як ти радієш дрібницям.</p>
+        </li>
+
+        <li class="reason-item rotate-right">
+          <span class="reason-num">06</span>
+          <p class="reason-text">Ти надихаєш бути кращим.</p>
+        </li>
+
+        <li class="reason-item rotate-left">
+          <span class="reason-num">07</span>
+          <p class="reason-text">Ти моя “домівка”, де б ми не були.</p>
+        </li>
+
+        <li class="reason-item rotate-right">
+          <span class="reason-num">08</span>
+          <p class="reason-text">Ти — моя найкраща випадковість.</p>
+        </li>
+      </ol>
+
+      <aside class="reasons-note tape-corner">
+        <h3 class="note-title">Маленька примітка</h3>
+        <p class="note-text">
+          Я можу написати ще сотню, але головне — я дуже люблю тебе. І хочу, щоб
+          цей день був для тебе легким, красивим і справжнім.
+        </p>
+        <p class="note-sign">— твій коханий</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+          <section class="playlist" id="playlist">
+  <div class="container">
+    <h2 class="playlist-title">Плейлист</h2>
+    <p class="playlist-subtitle">Музика, яку хочеться слухати разом</p>
+
+    <div class="playlist-wrap">
+      <div class="playlist-card rotate-left tape-top">
+        <h3 class="playlist-card-title">YouTube Music</h3>
+        <p class="playlist-card-text">Ці пісні — про настрій, спогади і нас.</p>
+
+        <!-- Fake player -->
+        <div class="player">
+          <div class="player-top">
+            <div class="player-cover" aria-hidden="true"></div>
+
+            <div class="player-meta">
+              <p class="player-name">Наш плейлист</p>
+              <p class="player-desc">Відкриється у YouTube Music</p>
+
+              <div class="player-controls" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="bar w-1"></span>
+                <span class="bar w-2"></span>
+                <span class="bar w-3"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="player-bottom">
+            <div class="timeline" aria-hidden="true">
+              <span class="time">0:00</span>
+              <div class="line">
+                <div class="line-fill"></div>
+                <div class="knob"></div>
+              </div>
+              <span class="time">—:—</span>
+            </div>
+
+            <a
+              class="player-btn"
+              href="https://music.youtube.com/playlist?list=PLMu-ma-lx8W8Wf-T9fW5hfLmEbLiCxXlz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ▶ Відкрити плейлист
+            </a>
+          </div>
+        </div>
+        <!-- /Fake player -->
+      </div>
+    </div>
+
+    <div class="playlist-note tape-corner">
+      <p class="playlist-note-text">
+        Увімкни музику, перегортай сторінку — і нехай час трохи зупиниться.
+      </p>
+      <p class="playlist-note-sign">— з любовʼю</p>
+    </div>
+  </div>
+</section>
+
+          <section class="plans" id="plans">
+  <div class="container">
+    <h2 class="plans-title">Плани</h2>
+    <p class="plans-subtitle">Те, що хочеться прожити разом</p>
+
+    <div class="plans-board">
+      <article class="plan-card rotate-left">
+        <span class="plan-pin"></span>
+        <h3 class="plan-title">Подорож</h3>
+        <p class="plan-text">
+          Просто зібрати речі й поїхати туди, де ще не були.
+        </p>
+      </article>
+
+      <article class="plan-card rotate-right">
+        <span class="plan-pin"></span>
+        <h3 class="plan-title">Більше спільних вечорів</h3>
+        <p class="plan-text">Фільми, чай, музика і тиша, в якій добре.</p>
+      </article>
+
+      <article class="plan-card rotate-left">
+        <span class="plan-pin"></span>
+        <h3 class="plan-title">Нові традиції</h3>
+        <p class="plan-text">Маленькі ритуали, які будуть тільки нашими.</p>
+      </article>
+
+      <article class="plan-card rotate-right">
+        <span class="plan-pin"></span>
+        <h3 class="plan-title">Сміятися частіше</h3>
+        <p class="plan-text">Навіть без приводу. Особливо без приводу.</p>
+      </article>
+
+      <article class="plan-card rotate-left">
+        <span class="plan-pin"></span>
+        <h3 class="plan-title">Підтримувати одне одного</h3>
+        <p class="plan-text">У простих і складних моментах.</p>
+      </article>
+
+      <article class="plan-card rotate-left">
+        <span class="plan-pin"></span>
+        <h3 class="plan-title">Навчатися разом</h3>
+        <p class="plan-text">Пробувати нове. І рости поруч.</p>
+      </article>
+
+      <article class="plan-card rotate-left">
+        <span class="plan-pin"></span>
+        <h3 class="plan-title">Зберігати спогади</h3>
+        <p class="plan-text">
+          Фотографії, нотатки, дрібниці. Щоб потім повертатися.
+        </p>
+      </article>
+
+      <article class="plan-card rotate-left">
+        <span class="plan-pin"></span>
+        <h3 class="plan-title">Піклуватися про себе і нас</h3>
+        <p class="plan-text">Берегти тепло. І не поспішати.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+          <section class="final" id="final">
+  <div class="container">
+    <h2 class="final-title">Фінал</h2>
+    <p class="final-subtitle">Остання сторінка, але не останні слова</p>
+
+    <div class="final-wrap">
+      <div class="final-polaroid rotate-left">
+        <img src="/Birthday/assets/naykrache-ChBnaxD1.jpg" alt="Final photo" />
+        <p class="final-caption">Для мене ти — найкраще, що сталося.</p>
+      </div>
+
+      <div class="final-letter tape-top">
+        <p class="final-text">З Днем народження, моя хороша ❤️</p>
+        <p class="final-text">
+          Я хочу, щоб ти сьогодні відчула: тебе люблять, тебе цінують, і ти дуже
+          важлива. Я поруч. І я дуже радий, що ми є одне в одного.
+        </p>
+        <p class="final-text">
+          Нехай в цьому році буде більше легкості, сміху, тепла і моментів, які
+          хочеться зберігати.
+        </p>
+
+        <button class="final-btn" type="button" data-final-open>
+          Натисни 💌
+        </button>
+
+        <div class="final-secret" hidden data-final-secret>
+          <p class="final-secret-title">Секретне повідомлення</p>
+          <p class="final-secret-text">
+            Я люблю тебе. Дуже. І хочу зробити тебе щасливою не тільки сьогодні.
+          </p>
+          <p class="final-secret-sign">— твій Олександрик</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        </main>
+
+        <footer class="footer">
+  <div class="container">
+    <div class="footer-wrap rotate-left tape-top">
+      <p class="footer-text">Зроблено з любовʼю ❤️</p>
+      <p class="footer-subtext">Ця сторінка — тільки для тебе</p>
+      <p class="footer-sign">— завжди твій коханий</p>
+    </div>
   </div>
 </footer>
 
+      </div>
+    </div>
 
   </body>
 </html>
