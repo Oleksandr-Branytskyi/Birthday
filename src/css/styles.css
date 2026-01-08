@@ -33,3 +33,16 @@
   box-shadow: inset 6px 0 0 rgba(0, 0, 0, 0.03),
     inset -6px 0 0 rgba(0, 0, 0, 0.03);
 }
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .page {
+    padding: 0; /* 🔥 прибрали відступи зліва/справа */
+  }
+
+  .page-frame {
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+  }
+}
