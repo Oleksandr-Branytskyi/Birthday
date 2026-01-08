@@ -1,0 +1,113 @@
+.final {
+  padding: 110px 0;
+  background: #fffaf3;
+}
+
+.final-title {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 42px;
+  color: #2b2b2b;
+  margin-bottom: 8px;
+}
+
+.final-subtitle {
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 17px;
+  color: #6b6b6b;
+  margin-bottom: 56px;
+}
+
+.final-wrap {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 44px;
+  align-items: start;
+}
+
+.final-polaroid {
+  background: #ffffff;
+  padding: 14px 14px 28px;
+  box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 🔽 КЛЮЧОВЕ МІСЦЕ */
+.final-polaroid img {
+  width: 100%;
+  height: 500px; /* обмежуємо висоту */
+  object-fit: cover; /* акуратно обрізає */
+  object-position: center; /* фокус по центру */
+  display: block;
+  border-radius: 2px;
+}
+
+.final-caption {
+  margin: 14px 0 0;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 17px;
+  color: #333;
+}
+
+.final-polaroid:hover {
+  transform: rotate(0deg) translateY(-6px) scale(1.04);
+  box-shadow: 12px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.final-letter {
+  background: #fffdf6;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 28px 26px 24px;
+  box-shadow: 6px 8px 0 rgba(0, 0, 0, 0.14);
+  transform: rotate(-0.6deg);
+}
+
+.final-text {
+  margin: 0 0 14px;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  line-height: 1.15;
+  color: #2b2b2b;
+}
+
+@media (max-width: 900px) {
+  .final-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .final-polaroid {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .final-polaroid img {
+    height: 360px; /* менша висота на планшеті */
+  }
+
+  .final-letter {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .final {
+    padding: 90px 0;
+  }
+
+  .final-title {
+    font-size: 36px;
+  }
+
+  .final-text {
+    font-size: 26px;
+  }
+
+  .final-polaroid img {
+    height: 300px; /* ще компактніше на мобілці */
+  }
+}

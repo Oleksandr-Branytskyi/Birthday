@@ -1,0 +1,106 @@
+.details {
+  padding: 90px 0;
+  background: #fffaf3;
+}
+
+.details-title {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 38px;
+  color: #2b2b2b;
+  margin-bottom: 6px;
+}
+
+.details-subtitle {
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
+  color: #6b6b6b;
+  margin-bottom: 48px;
+}
+
+.details-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 36px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.detail-card {
+  position: relative;
+  background: #ffffff;
+  padding: 28px 22px 24px;
+  border-radius: 10px;
+  box-shadow: 6px 8px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.detail-card:hover {
+  transform: rotate(0deg) translateY(-6px);
+  box-shadow: 10px 14px 0 rgba(0, 0, 0, 0.2);
+}
+
+.rotate-left {
+  transform: rotate(-2deg);
+}
+
+.rotate-right {
+  transform: rotate(2deg);
+}
+
+.detail-pin {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background: #d64545;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.detail-pin::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 7px;
+  width: 4px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.detail-title {
+  margin: 10px 0 8px;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+.detail-text {
+  margin: 0;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #333;
+}
+
+@media (max-width: 480px) {
+  .details {
+    padding: 70px 0;
+  }
+
+  .details-title {
+    font-size: 32px;
+  }
+
+  .detail-text {
+    font-size: 22px;
+  }
+}

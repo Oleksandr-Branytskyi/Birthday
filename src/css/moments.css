@@ -1,0 +1,152 @@
+.moments {
+  padding: 110px 0;
+  background: #f7f4ef;
+  position: relative;
+}
+
+.moments-title {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  color: #2b2b2b;
+  margin-bottom: 10px;
+}
+
+.moments-subtitle {
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 17px;
+  color: #6b6b6b;
+  margin-bottom: 64px;
+}
+
+.moments-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+}
+
+.moment-card {
+  display: grid;
+  grid-template-columns: 380px 1fr; /* 🔼 трохи більші фото */
+  gap: 44px;
+  align-items: center;
+}
+
+.moment-card.reverse {
+  grid-template-columns: 1fr 380px;
+}
+
+.moment-card.reverse .moment-polaroid {
+  order: 2;
+}
+
+.moment-card.reverse .moment-note {
+  order: 1;
+}
+
+.moment-polaroid {
+  background: #ffffff;
+  padding: 14px 14px 28px;
+  box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 🔽 КЛЮЧОВЕ: всі фото однакові */
+.moment-polaroid img {
+  width: 100%;
+  height: 340px; /* ОДНАКОВА ВИСОТА */
+  object-fit: cover; /* акуратний кроп */
+  object-position: center;
+  display: block;
+  border-radius: 2px;
+}
+
+.moment-polaroid figcaption {
+  margin-top: 14px;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
+  color: #333;
+}
+
+.rotate-left {
+  transform: rotate(-3deg);
+}
+
+.rotate-right {
+  transform: rotate(3deg);
+}
+
+.moment-polaroid:hover {
+  transform: rotate(0deg) translateY(-6px) scale(1.04);
+  box-shadow: 12px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.moment-note {
+  background: #fffdf6;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 28px 26px 24px;
+  box-shadow: 6px 8px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  transform: rotate(-0.6deg);
+}
+
+.moment-text {
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  line-height: 1.15;
+  color: #2b2b2b;
+}
+
+.moment-sign {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 15px;
+  color: #6b6b6b;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .moment-card,
+  .moment-card.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .moment-polaroid {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .moment-polaroid img {
+    height: 320px;
+  }
+
+  .moment-note {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .moments {
+    padding: 90px 0;
+  }
+
+  .moments-title {
+    font-size: 34px;
+  }
+
+  .moment-text {
+    font-size: 26px;
+  }
+
+  .moment-polaroid img {
+    height: 280px;
+  }
+}
